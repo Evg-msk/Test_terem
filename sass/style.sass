@@ -1,0 +1,47 @@
+@mixin content-blocks
+    display: flex
+    text-align: center
+    height: 200px
+    border: 1px solid #000
+.header
+    background-color: black
+    color: #ffffff
+    text-align: center
+    height: 100px
+.header_hide
+    display: none
+.row
+    margin: 0
+.content
+    margin-top: 80px
+    &__block_1
+        @include content-blocks
+        background-color: #d6c594
+    &__block_2
+        @include content-blocks
+        border-style: dashed
+        background-color: #908edc
+    &__block_3
+        @include content-blocks
+        background-color: #dc9bbe
+.swapped
+    order: -1
+.footer__block_1, .footer__block_2
+    @include content-blocks
+    margin-top: 50px
+    justify-content: center
+    align-items: center
+.section
+    padding: 15px
+    background-color: antiquewhite
+#result
+    display: block
+    margin: 5px auto
+    width: 50%
+    height: 40px
+    background-color: darkgray
+    border: 2px dashed deepskyblue
+    border-radius: 5px
+    text-align: center
+    color: #91ea42
+    font-size: 20px
