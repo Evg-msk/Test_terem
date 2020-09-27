@@ -17,9 +17,8 @@ function submitForm(event) {
 
     fetch("http://localhost:63342/Test_Terem/form.html?")
         .then(response => response.text())
-        .then(json => {
-                alert(json);
-                alert('Страница успешно загружена!');
+        .then(text => {
+                alert(text);
             })
         .catch(()=> alert ('Что-то пошло не так...'));
 }
